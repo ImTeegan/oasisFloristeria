@@ -1,0 +1,7 @@
+@import '../global.scss';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.btn-primary {
+    --bs-btn-bg: #FF0000; // Cambia el color de fondo del botón primario a rojo
+}
