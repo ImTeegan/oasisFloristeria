@@ -54,7 +54,7 @@ html {
     box-sizing: inherit;
     scroll-behavior: smooth;
     height: -webkit-fill-available;
-    background-color: #7e8fdb;
+   
 }
 
 body {
@@ -71,8 +71,7 @@ main {
     overflow: hidden;
 }
 
-a,
-button {
+a {
     cursor: pointer;
     border: none;
     outline: none;
@@ -80,6 +79,8 @@ button {
     background: none;
     box-shadow: none;
     text-decoration: none;
+   // justify-self: center;
+    
 }
 
 
@@ -93,8 +94,7 @@ button {
 .container {
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
-    padding: 0 1.25rem;
+   
 }
 
 .centered {
@@ -114,10 +114,10 @@ button {
     height: auto;
     margin: 0 auto;
     transition: all 0.35s ease;
-    background-color: #7e8fdb;
+    background-color: $color-paleta2-4;
 
     &.on-scroll {
-        background: var(--color-black-300);
+        background: $color-black-transparent;
         box-shadow: var(--shadow-medium);
     }
 }
@@ -126,25 +126,31 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    column-gap: 1.25rem;
+    justify-content: space-between;
+    //column-gap: 1.25rem;
     width: 100%;
     height: 4.25rem;
     margin: 0 auto;
 }
 
+.brand-container {
+    text-align: center;
+    flex: 1;
+    margin: auto;
+}
+
 .brand {
-    font-family: inherit;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: -1px;
-    color: var(--color-white-100);
-    text-transform: uppercase;
+    height: 50%;
+    width: 50%;
+    //padding-left: 10px;
+    
+    
+    
 }
 
 .menu {
     position: fixed;
+    flex: 1;
     top: -100%;
     left: 0;
     width: 100%;
@@ -154,6 +160,8 @@ button {
     background-color: var(--color-black-300);
     box-shadow: var(--shadow-medium);
     transition: all 0.4s ease-in-out;
+    margin: auto auto auto 0;
+
 
     &.is-active {
         top: 0;
@@ -174,28 +182,32 @@ button {
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5;
-        color: var(--color-white-100);
+        color: $color-paleta2-2;
         text-transform: uppercase;
         transition: all 0.3s ease;
     }
 
     &-block {
-        display: inline-block;
+        //display: inline-block;
         font-family: inherit;
-        font-size: 0.875rem;
+        font-size: 36px;
         font-weight: 500;
-        line-height: 1.25;
+        //line-height: 1.25;
         user-select: none;
-        white-space: nowrap;
+        //white-space: nowrap;
         text-align: center;
         margin-left: auto;
-        padding: 0.65rem 1.5rem;
-        border-radius: 3rem;
-        text-transform: capitalize;
-        color: var(--color-white);
-        background-color: var(--color-blue-600);
-        box-shadow: var(--shadow-medium);
+        
+        padding-bottom: .3rem;
+        border-radius: 50%;
+        margin-right: 10px;
+  
+       // text-transform: capitalize;
+        color: $color-paleta2-2;
+        //background-color: $color-paleta2-2;
+        //box-shadow: var(--shadow-medium);
         transition: all 0.3s ease-in-out;
+        flex: 1;
     }
 
     // Media Query Breakpoint
@@ -209,7 +221,9 @@ button {
         background: none;
         box-shadow: none;
 
-        .brand {}
+        .brand {
+            
+        }
 
         &-inner {
             display: flex;
@@ -223,7 +237,7 @@ button {
         }
 
         &-block {
-            margin-right: 2rem;
+           margin-right: 2rem;
         }
     }
 }
@@ -261,7 +275,7 @@ button {
         opacity: 1;
         border-radius: 1rem;
         transform: rotate(0deg);
-        background-color: var(--color-white-100);
+        background-color: $color-paleta2-2;
         transition: 0.25s ease-in-out;
 
         &:nth-child(1) {
@@ -296,29 +310,6 @@ button {
     }
 }
 
-.triangulo-invertido {
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    /* Centra horizontalmente */
-
-    /* Centra verticalmente */
-    width: 100px;
-    /* Ajusta el ancho según tus necesidades */
-    height: 100px;
-    /* Ajusta la altura según tus necesidades */
-    background-color: #fff;
-    content: "";
-    position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 100px solid #7e8fdb;
-}
 
 
 

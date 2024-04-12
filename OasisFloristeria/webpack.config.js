@@ -20,6 +20,10 @@ module.exports = {
         rules: [
             //investigra y agregar html loader
             {
+                test: /\.html$/i,
+                loader: "html-loader",
+              },
+            {
                 test: /\.s[ac]ss$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
@@ -31,10 +35,15 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: ['file-loader']
             },
-            {
+            /*{
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
-                use: ['file-loader']
-            }
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'images', // Output directory for images
+                    },
+                },]
+            },*/
         ],
     }
 };
