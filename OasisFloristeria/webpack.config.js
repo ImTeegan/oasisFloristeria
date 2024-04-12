@@ -7,7 +7,7 @@ const webpack = require('webpack');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: './src/index.js',
+        filename: './index.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
@@ -18,6 +18,7 @@ module.exports = {
     },
     module: {
         rules: [
+            //investigra y agregar html loader
             {
                 test: /\.s[ac]ss$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
