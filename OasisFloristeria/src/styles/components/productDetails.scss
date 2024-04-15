@@ -1,1 +1,52 @@
 @import '../global.scss';
+
+.product-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  
+  
+  .product-image {
+    width:80%;
+    height: auto;
+    //padding: 3.5rem;
+    object-fit: cover;
+    border-radius:23px;
+    margin-left: 3.5rem;
+    margin-bottom: 3.5rem;
+    //margin-right: ;
+    box-shadow: 1px 7px 13px var(--shadow);
+    
+  }
+
+  
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    color: $color-paleta2-2;
+  }
+  
+  .product-details h2 {
+    margin-top: 0;
+    font-size: 3.2rem;
+    color: $color-paleta2-2;
+  }
+
+  .pPrice {
+    font-size: 2.5rem;
+    color: $color-paleta2-3;
+    padding-top: 3rem;
+  }
+
+  .pDescrip {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  

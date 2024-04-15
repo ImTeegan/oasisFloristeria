@@ -1,13 +1,14 @@
 //import imagenausar from '../public/images/dicomo.jpg'
 
 let products = {
-  
+
   data: [
     {
       productName: "Regular White T-Shirt",
       category: "Topwear",
       price: "30",
-      image: "https://cdn.pixabay.com/photo/2016/12/17/18/51/lilacs-1914124_1280.jpg",
+      image: "ramo1.jpg",
+      description: "Hermoso ramo de flores mixtas primaveales",
     },
     {
       productName: "Beige Short Skirt",
@@ -64,11 +65,12 @@ const product = products.data.find(item => item.productName === productName);
 
 // Mostrar los detalles del producto en la página
 if (product) {
-    document.getElementById('product-name').innerText = product.productName;
-    document.getElementById('product-category').innerText = product.category;
-    document.getElementById('product-price').innerText = "$" + product.price;
-    document.getElementById('product-image').src = product.image;
+  document.getElementById('product-name').innerText = product.productName;
+  document.getElementById('product-category').innerText = product.category;
+  document.getElementById('product-description').innerText = product.description;
+  document.getElementById('product-price').innerText = "$" + product.price;
+  document.getElementById('product-image').src = product.image;
 } else {
-    // Producto no encontrado, mostrar mensaje de error o redireccionar a otra página
-    document.getElementById('product-name').innerText = "como que no encuentra el producto.";
+  // Producto no encontrado, mostrar mensaje de error o redireccionar a otra página
+  document.getElementById('product-name').innerText = "como que no encuentra el producto.";
 }

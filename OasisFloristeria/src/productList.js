@@ -9,6 +9,7 @@ let products = {
         category: "Topwear",
         price: "30",
         image: "ramo1.jpg",
+        description: "Hermoso ramo de flores mixtas primaveales",
       },
       {
         productName: "Beige Short Skirt",
