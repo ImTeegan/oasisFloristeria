@@ -8,13 +8,13 @@
 
 
     .hero-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        // display: flex;
+        //grid-template-columns: repeat(1, 1fr);
 
         width: 100%;
 
         .hero-item {
-            position: relative;
+            //position: relative;
 
             .image-hero {
                 width: 100%;
@@ -46,82 +46,56 @@
             }
 
             button.shop-now {
-                font-weight: 500;
-                font-size: 1.6rem;
                 position: absolute;
-                bottom: 40%;
+                text-align: center;
+                bottom: 35%;
                 left: 50%;
                 transform: translate(-50%, 50%);
                 z-index: 1;
-                background-color: $color-p24-transparente;
-                width: 140px;
-                height: 50px;
-                border-radius: 18px;
-                color: $color-red;
+                background-color: $color-button-main;
+                border: 0 solid #E5E7EB;
+                box-sizing: border-box;
+                color: $color-white;
+                //
+                font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1.75rem;
+                padding: .75rem 1.65rem;
+
+
+                text-decoration: none #000000 solid;
+                text-decoration-thickness: auto;
+                width: 100%;
+                max-width: 460px;
+
+                cursor: pointer;
+                //transform: rotate(-2deg);
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .shop-now:focus {
+                outline: 0;
+            }
+
+            .shop-now:after {
+                content: '';
+                position: absolute;
+                border: 1px solid #000000;
+                bottom: 4px;
+                left: 4px;
+                width: calc(100% - 1px);
+                height: calc(100% - 1px);
+            }
+
+            .shop-now:hover:after {
+                bottom: 2px;
+                left: 2px;
             }
         }
     }
-
-
-
-    /* CSS */
-    .button-53 {
-        bottom: 25%;
-        left: 35%;
-        transform: translate(-50%, 50%);
-        background-color: $color-button-main;
-        border: 0 solid #E5E7EB;
-        box-sizing: border-box;
-        color: $color-white;
-        display: flex;
-        font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 2rem;
-        font-weight: 700;
-        justify-content: center;
-        line-height: 1.75rem;
-        padding: .75rem 1.65rem;
-        position: relative;
-        text-align: center;
-        text-decoration: none #000000 solid;
-        text-decoration-thickness: auto;
-        width: 100%;
-        max-width: 460px;
-        position: relative;
-        cursor: pointer;
-        transform: rotate(-2deg);
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-    }
-
-    .button-53:focus {
-        outline: 0;
-    }
-
-    .button-53:after {
-        content: '';
-        position: absolute;
-        border: 1px solid #000000;
-        bottom: 4px;
-        left: 4px;
-        width: calc(100% - 1px);
-        height: calc(100% - 1px);
-    }
-
-    .button-53:hover:after {
-        bottom: 2px;
-        left: 2px;
-    }
-
-    @media (min-width: 768px) {
-        .button-53 {
-            padding: .75rem 3rem;
-            font-size: 1.25rem;
-        }
-    }
-
-
-
 
     @media screen and (max-width: 768px) {
         .hero-grid {
@@ -141,6 +115,8 @@
                 transform: translate(-50%, 0);
                 bottom: auto;
                 left: auto;
+                padding: .75rem 3rem;
+                font-size: 1.25rem;
             }
         }
     }
