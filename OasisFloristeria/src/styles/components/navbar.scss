@@ -114,10 +114,10 @@ a {
     height: auto;
     margin: 0 auto;
     transition: all 0.35s ease;
-    background-color: $color-paleta2-4;
+    background-color: $color-p24-transparente;
 
     &.on-scroll {
-        background: $color-black-transparent;
+        background: $color-p24-transparente-oscuro;
         box-shadow: var(--shadow-medium);
     }
 }
@@ -129,20 +129,21 @@ a {
     justify-content: space-between;
     //column-gap: 1.25rem;
     width: 100%;
-    height: 4.25rem;
+    height: 6.5rem;
     margin: 0 auto;
 }
 
 .brand-container {
     text-align: center;
     flex: 1;
-    margin: auto;
+    margin: auto auto auto 50px; 
+
 }
 
 .brand {
     height: 50%;
     width: 50%;
-    //padding-left: 10px;
+   
     
     
     
@@ -175,6 +176,7 @@ a {
         justify-content: center;
         align-items: center;
         row-gap: 1.25rem;
+        padding-left: 4.1rem;
     }
 
     &-link {
@@ -195,12 +197,12 @@ a {
         //line-height: 1.25;
         user-select: none;
         //white-space: nowrap;
-        text-align: center;
+        text-align:right;
         margin-left: auto;
         
         padding-bottom: .3rem;
         border-radius: 50%;
-        margin-right: 10px;
+        padding-right: 4.2rem;
   
        // text-transform: capitalize;
         color: $color-paleta2-2;
@@ -228,16 +230,19 @@ a {
         &-inner {
             display: flex;
             flex-direction: row;
-            column-gap: 1rem;
+            column-gap: 1.5rem;
             margin: 0 auto;
+            justify-content: left;
+            //justify-content: space-between;
         }
 
         &-link {
             text-transform: capitalize;
+            font-size: 1.4rem;
         }
 
         &-block {
-           margin-right: 2rem;
+            justify-content: right;
         }
     }
 }

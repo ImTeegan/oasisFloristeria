@@ -2,6 +2,8 @@
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./styles/styles.scss"
 
+
+
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");
 const headerMenu = document.getElementById("header");
@@ -39,3 +41,11 @@ window.addEventListener("resize", () => {
         }
     }
 });
+
+document.getElementById("openProductList").addEventListener("click", function() {
+    window.location.href = "/productList.html";
+});
+
+
+
+  

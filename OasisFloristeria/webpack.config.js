@@ -11,7 +11,22 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
-    plugins: [new HtmlWebpackPlugin({ title: "My Webpack App", template: './src/index.html', }), new MiniCssExtractPlugin(),
+    plugins: [new HtmlWebpackPlugin({
+        title: "My Webpack App",
+        template: './src/index.html',
+        //favicon: "./public/images/icon/favicon.ico",
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/productList.html",
+        filename: "./productList.html",
+        baseUrl: "/productList.html",
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/productDetails.html",
+        filename: "./productDetails.html",
+        baseUrl: "/productDetails.html",
+    }),
+    new MiniCssExtractPlugin(),
     new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' })],
     devServer: {
         watchFiles: ["src/**/*.js", "src/**/*.html", "src/**/*.scss"],
@@ -22,7 +37,7 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: "html-loader",
-              },
+            },
             {
                 test: /\.s[ac]ss$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],

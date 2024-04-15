@@ -1,0 +1,133 @@
+@import '../global.scss';
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+}
+
+#search-container input:focus {
+    border-bottom-color: #6759ff;
+}
+
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: $color-paleta2-4;
+    color: $color-paleta2-2;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+.button-value {
+    border: 2px solid $color-paleta2-2;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    color: $color-paleta2-2;
+    cursor: pointer;
+}
+
+.active {
+    background-color: $color-paleta2-2;
+    color: #ffffff;
+}
+
+/*#products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}*/
+
+.card-container {
+    padding-left: 1.7rem;
+}
+
+/*Diseno del card*/
+
+.card {
+  background: white;
+  padding: 23px;
+  border-radius:27px;
+}
+
+.image-card {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+
+.hide {
+    display: none;
+}
+
+.category-text {
+    padding: 2rem 0;
+    color: $color-paleta2-2;
+}
+
+.product-name-card {
+    color: $color-paleta2-2;
+    padding-left: 0.5rem;
+    //text-decoration: none;
+}
+
+.price-cards {
+    color: $color-paleta2-2;
+    padding-left: 0.6rem;
+    font-size: 1.3rem;
+}
+
+
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #products {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
+}

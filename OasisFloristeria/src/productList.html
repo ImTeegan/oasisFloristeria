@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Filter And Search</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -34,106 +38,45 @@
     </nav>
   </header>
   <!--<div class="triangulo-invertido"></div>
-     Main Section -->
+       Main Section -->
 
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-item">
-        <h2 class="title-home">La Tierra sonríe mediante las FLORES</h2>
-        <p class="frase-home">Descubre nuestras creaciones florales hoy mismo</p>
-        <img class="image-hero" src="../public/banneropc4.png" alt="Imagen 1">
-        <button class="button-53">Descubrir</button>
+  <section class="bannerAux">
+    <div class="bannerAux-grid">
+      <div class="bannerAux-item">
+        <h2 class="title-home-aux">Productos</h2>
+        <img class="image-hero-aux" src="../public/banneropc4.png" alt="Imagen 1">
       </div>
-
     </div>
   </section>
 
+  <div class="wrapper">
+    <div id="search-container">
+      <input type="search" id="search-input" placeholder="Ingresa el nombre del producto" />
+      <button id="search">Buscar</button>
+    </div>
+    <div id="buttons">
+      <div class="category-text"><strong>Categorías:</strong></div>
+      <button class="button-value" onclick="filterProduct('all')">Todas las categorías</button>
+      <button class="button-value" onclick="filterProduct('Ramos florales')">
+        Ramos florales
+      </button>
+      <button class="button-value" onclick="filterProduct('Arreglos florales')">
+        Arreglos florales
+      </button>
+      <button class="button-value" onclick="filterProduct('Paquetes de Bodas')">
+        Paquetes de Bodas
+      </button>
+      <button class="button-value" onclick="filterProduct('Eventos especiales')">
+        Eventos especiales
+      </button>
 
-  <!-- 
-  <div class="twosec">
-      <h2 class="twosec__titlesecond">Algunos de los favoritos</h2>
-      <a class="Twosec__anchor" id="openProductList" >Ver todos los productos</a>
-  </div>
+    </div>
     
-    <section class="product-section">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../public/images/ramoencesped.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../public/images/ramoencesped.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../public/images/ramoencesped.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../public/images/ramoencesped.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </section>
-    -->
+  </div>
+  <div class="product-section card-container" id="products">
 
-    <div class="demo_title">
-      
-      <h1>Arreglos florales</h1>
-    </div>
-    <div class="product-section">
-      <div class="tpn_card">
-        <img src="../public/ramo2.jpg" class="image-cards" />
-        <h5>Dragon Art</h5>
-        <p>Enjoy this clean styling.</p>
-        <a href="javascript:;" class="btn tpn_btn">Explore</a>
-      </div>
-      <div class="tpn_card">
-        <img src="../public/ramo1.jpg" class="image-cards" />
-        <h5>Dragon Art</h5>
-        <p>Enjoy this clean styling.</p>
-        <a href="javascript:;" class="btn tpn_btn">Explore</a>
-      </div>
-      <div class="tpn_card">
-        <img src="../public/ramo3.jpg" class="image-cards" />
-        <h5>Dragon Art</h5>
-        <p>Enjoy this clean styling.</p>
-        <a href="javascript:;" class="btn tpn_btn">Explore</a>
-      </div>
-      <div class="tpn_card">
-        <img src="../public/boda.jpg" class="image-cards" />
-        <h5>Dragon Art</h5>
-        <p>Enjoy this clean styling.</p>
-        <a href="javascript:;" class="btn tpn_btn">Explore</a>
-      </div>
-    </div>
-    <div id="copyrights">
-      <a id="openProductList" target="_blank"><strong>Ver todos los productos</strong></a>
-    </div>
-  
+  </div>
 
-
-
-
-  <!-- Footer -->
   <footer class="text-center text-lg-start bg-body-tertiary text-muted">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -229,16 +172,9 @@
     </div>
     <!-- Copyright -->
   </footer>
-  <!-- Footer -->
 
-
-
-
-
-
-
-
-
+  <!-- Script -->
+  <script src="./productList.js"></script>
 </body>
 
 </html>
