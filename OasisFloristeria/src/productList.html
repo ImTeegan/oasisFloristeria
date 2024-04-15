@@ -57,7 +57,7 @@
     <div id="buttons">
       <div class="category-text"><strong>Categorías:</strong></div>
       <button class="button-value" onclick="filterProduct('all')">Todas las categorías</button>
-      <button class="button-value" onclick="filterProduct('Ramos florales')">
+      <button class="button-value" onclick="filterProduct('Ramos-florales')">
         Ramos florales
       </button>
       <button class="button-value" onclick="filterProduct('Arreglos florales')">
@@ -71,11 +71,25 @@
       </button>
 
     </div>
+
+
     
   </div>
-  <div class="product-section card-container" id="products">
 
+  <div class="product-section card-container" id="products"></div>
+
+  <div class="pagination" style="color: black;">
+    <button id="prevPage">&laquo; Prev</button>
+    <span id="currentPage"></span>
+    <button id="nextPage">Next &raquo;</button>
   </div>
+
+  
+
+  
+
+  
+  
 
   <footer class="text-center text-lg-start bg-body-tertiary text-muted">
     <!-- Section: Social media -->
