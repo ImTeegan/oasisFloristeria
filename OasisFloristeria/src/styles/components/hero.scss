@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
 
     .hero-grid {
@@ -33,9 +33,9 @@
                 transform: translate(-50%, 50%);
                 z-index: 1;
 
-                @media only screen and (min-width: 48rem) { 
-                   
-                    font-size: 6rem;
+                @media only screen and (min-width: 48rem) {
+
+                    font-size: 4rem;
                 }
             }
 
@@ -49,8 +49,8 @@
                 transform: translate(-50%, 50%);
                 z-index: 1;
 
-                @media only screen and (min-width: 48rem) {       
-                    font-size: 2.3rem;
+                @media only screen and (min-width: 48rem) {
+                    font-size: 1.8rem;
                     bottom: 50%;
                 }
             }
@@ -85,7 +85,7 @@
                 -webkit-user-select: none;
                 touch-action: manipulation;
 
-                @media only screen and (min-width: 48rem) {       
+                @media only screen and (min-width: 48rem) {
                     bottom: 35%;
                     max-width: 450px;
                 }

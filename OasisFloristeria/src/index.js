@@ -42,10 +42,7 @@ window.addEventListener("resize", () => {
     }
 });
 
-document.getElementById("openProductList").addEventListener("click", function() {
+/*
+document.getElementById("openProductList").addEventListener("click", function () {
     window.location.href = "/productList.html";
-});
-
-
-
-  
+});*/

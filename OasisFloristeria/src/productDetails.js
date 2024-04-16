@@ -4,14 +4,14 @@ let products = {
 
   data: [
     {
-      productName: "Ramo Primaveral Encantado",
+      productName: "Ramo Primaveral",
       category: "Ramos",
       price: "20,000",
       image: "ramo1.jpg",
       description: "Hermoso ramo de flores mixtas primaveales con envoltura personalizada",
     },
     {
-      productName: "Arreglo Jardín Encantado",
+      productName: "Arreglo Jardín",
       category: "Arreglos",
       price: "49,000",
       image: "arreglo1.jpg",
@@ -19,7 +19,7 @@ let products = {
 
     },
     {
-      productName: "Ramo Serenata al Atardecer",
+      productName: "Ramo Serenata",
       category: "Ramos",
       price: "35,000",
       image: "ramo2.jpg",
@@ -35,7 +35,7 @@ let products = {
 
     },
     {
-      productName: "Ramo de Felicidad Veraniega",
+      productName: "Ramo de Felicidad",
       category: "Ramos",
       price: "129,000",
       image: "ramo4.jpg",
@@ -51,7 +51,7 @@ let products = {
 
     },
     {
-      productName: "Arreglo Pradera Vibrante",
+      productName: "Arreglo Pradera",
       category: "Arreglo",
       price: "18,000",
       image: "arreglo2.jpg",
@@ -59,7 +59,7 @@ let products = {
 
     },
     {
-      productName: "Arreglo Elegancia Elegante",
+      productName: "Arreglo Elegancia",
       category: "Arreglos",
       price: "49,000",
       image: "arreglo3.jpg",
@@ -139,7 +139,7 @@ let products = {
 
     },
     {
-      productName: "Arreglo Oasis Tranquilo",
+      productName: "Arreglo Oasis",
       category: "Arreglos",
       price: "49,000",
       image: "arreglo6.jpg",
@@ -147,7 +147,7 @@ let products = {
 
     },
     {
-      productName: "Ramo Amanecer Sereno",
+      productName: "Ramo Amanecer",
       category: "Ramos",
       price: "9,000",
       image: "ramo8.jpg",
@@ -155,7 +155,7 @@ let products = {
 
     },
     {
-      productName: "Arreglo Magia Nocturna",
+      productName: "Arreglo Magia",
       category: "Arreglos",
       price: "29,000",
       image: "arreglo7.jpg",
@@ -163,7 +163,7 @@ let products = {
 
     },
     {
-      productName: "Arreglo Esplendor Otoñal",
+      productName: "Arreglo Esplendor",
       category: "Arreglos",
       price: "19,000",
       image: "arreglo8.jpg",
@@ -179,7 +179,7 @@ let products = {
 
     },
     {
-      productName: "Ramo Escarcha Invernal",
+      productName: "Ramo Escarcha",
       category: "Ramos",
       price: "19,000",
       image: "ramo9.jpg",
@@ -187,7 +187,7 @@ let products = {
 
     },
     {
-      productName: "Arreglo Flores de Medianoche",
+      productName: "Arreglo Flores",
       category: "Arreglos",
       price: "49,000",
       image: "arreglo1.jpg",

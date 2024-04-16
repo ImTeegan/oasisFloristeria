@@ -77,6 +77,10 @@
     padding: 2em 0;
 }*/
 
+#buttons {
+    margin-bottom: 3rem;
+}
+
 .card-container {
     display: grid;
 
@@ -89,6 +93,10 @@
         padding: 1rem 0rem;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.1rem;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 998px) {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -185,37 +193,41 @@ img {
 .pagination {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px; // Ajusta el margen superior según sea necesario
-    color: $color-paleta2-2;
+    margin-top: 20px;
     margin-bottom: 2rem;
 }
 
-.prevnext-buttons {
+.prevnext-buttons,
+.page-button {
     background-color: $color-paleta2-4;
-    /* Color de fondo */
     border: none;
     color: $color-paleta2-2;
-    /* Color del texto */
-    padding: 10px 20px;
-    /* Espaciado interno */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 12px;
-    /* Bordes redondeados */
-    font-weight: 500;
+    border-radius: 50%;
+    /* Hace que los botones sean redondos */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    /* Centra el texto verticalmente */
 }
 
-prevnext-buttons:hover {
-    background-color: #45a049;
-    /* Cambio de color al pasar el ratón */
+.page-button.active {
+    background-color: $color-paleta2-2;
+    color: $color-paleta2-4;
+    /* Color de fondo cuando el botón está activo */
 }
 
-#currentPage {
-    margin: 0 10px; // Espacio entre los botones
+.prevnext-buttons:hover,
+.page-button:hover {
+    background-color: $color-p24-transparente-oscuro;
+    /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.page-button.active:hover {
+    background-color: #2D4250;
 }
