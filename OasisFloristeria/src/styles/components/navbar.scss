@@ -134,9 +134,13 @@ a {
 }
 
 .brand-container {
-    text-align: center;
+    //text-align: center;
     flex: 1;
     margin: auto auto auto 50px; 
+
+    @media only screen and (min-width: 48rem) { 
+        text-align: center;
+    }
 
 }
 
@@ -176,7 +180,10 @@ a {
         justify-content: center;
         align-items: center;
         row-gap: 1.25rem;
-        padding-left: 4.1rem;
+        //padding-left: 4.1rem;
+        @media only screen and (min-width: 48rem) { 
+            padding-left: 4.1rem;
+        }
     }
 
     &-link {
@@ -184,9 +191,13 @@ a {
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5;
-        color: $color-paleta2-2;
+        color: $color-paleta2-4;
         text-transform: uppercase;
         transition: all 0.3s ease;
+
+        @media only screen and (min-width: 48rem) { 
+            color: $color-paleta2-2;
+        }
     }
 
     &-block {
@@ -282,6 +293,7 @@ a {
         transform: rotate(0deg);
         background-color: $color-paleta2-2;
         transition: 0.25s ease-in-out;
+        
 
         &:nth-child(1) {
             top: 0px;

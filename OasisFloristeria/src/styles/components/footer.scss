@@ -17,11 +17,18 @@
 
 .parag {
     text-align: justify;
-    //margin-left: 3rem;
+    
+
+    @media only screen and (max-width: 48rem) { 
+        margin-left: 3rem;
+    }
 }
 
 .titulo-footer {
     padding-left: 0.1px;
+    @media only screen and (max-width: 48rem) { 
+        margin-left: 3rem;
+    }
 }
 
 .upper-footer-left {
@@ -29,6 +36,10 @@
 }
 .upper-footer-right {
     padding-right: 1.3rem;
+    font-size: 2rem;
+    @media only screen and (max-width: 48rem) { 
+        padding-right: 0.1rem;
+    }
 }
 
 .row {

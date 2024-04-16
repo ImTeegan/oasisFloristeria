@@ -4,6 +4,12 @@
     width: 95%;
     margin: 0 auto;
     padding-left: 2rem;
+
+    @media only screen and (max-width: 48rem) {
+        padding-left: 1rem;
+
+    }
+
 }
 
 #search-container {
@@ -14,7 +20,7 @@
     background-color: transparent;
     width: 40%;
     border-bottom: 2px solid #110f29;
-    padding: 1em 0.3em;
+    //padding: 1em 0.3em;
 }
 
 #search-container input:focus {
@@ -34,10 +40,29 @@
 .button-value {
     border: 2px solid $color-paleta2-2;
     padding: 1rem 1rem;
-    border-radius: 3rem;
+    //border-radius: 3rem;
+    background-color: transparent;
+    color: $color-paleta2-2;
+    font-weight: 450;
+    cursor: pointer;
+
+    @media only screen and (max-width: 48rem) {
+        font-size: 0.9rem;
+
+    }
+}
+
+.button-value-aux {
+    border: none;
+    padding: 1rem 2rem;
+    //border-radius: 3rem;
     background-color: transparent;
     color: $color-paleta2-2;
     cursor: pointer;
+
+    @media only screen and (max-width: 48rem) {
+        padding: 1rem 0rem;
+    }
 }
 
 .active {
@@ -53,15 +78,26 @@
 }*/
 
 .card-container {
-    padding-left: 1.7rem;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem; // Espacio entre las tarjetas
+    padding: 0 1rem;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: 48rem) {
+        padding: 1rem 0rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.1rem;
+    }
 }
 
 /*Diseno del card*/
 
 .card {
-  background: white;
-  padding: 23px;
-  border-radius:27px;
+    background: white;
+    padding: 23px;
+    border-radius: 27px;
 }
 
 .image-card {
@@ -72,23 +108,28 @@
 }
 
 .image-container {
-    text-align: center;
+    //text-align: center;
 }
 
 
 img {
     max-width: 100%;
     object-fit: contain;
-    height: 15em;
+    //height: 15em;
 }
 
-.container {
-    padding-top: 1em;
+.container-list-card {
+    //padding-top: 1em;
     color: #110f29;
 }
 
-.container h5 {
-    font-weight: 500;
+.container-list-card h5 {
+
+    font-weight: 400;
+
+    @media only screen and (max-width: 48rem) {
+        font-size: 0.8rem;
+    }
 }
 
 .hide {
@@ -98,18 +139,27 @@ img {
 .category-text {
     padding: 2rem 0;
     color: $color-paleta2-2;
+
+    @media only screen and (max-width: 48rem) {
+        padding: 1rem 0;
+    }
 }
 
 .product-name-card {
     color: $color-paleta2-2;
-    padding-left: 0.5rem;
+    //padding-left: 0.5rem;
     //text-decoration: none;
 }
 
 .price-cards {
     color: $color-paleta2-2;
-    padding-left: 0.6rem;
-    font-size: 1.3rem;
+    //padding-left: 0.6rem;
+    font-size: 1.9rem;
+
+    @media only screen and (max-width: 48rem) {
+        font-size: 1.3rem;
+        padding-left: 0rem;
+    }
 }
 
 
@@ -128,6 +178,44 @@ img {
 
     #products {
         grid-template-columns: auto auto;
-        grid-column-gap: 1em;
+        //grid-column-gap: 1em;
     }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; // Ajusta el margen superior según sea necesario
+    color: $color-paleta2-2;
+    margin-bottom: 2rem;
+}
+
+.prevnext-buttons {
+    background-color: $color-paleta2-4;
+    /* Color de fondo */
+    border: none;
+    color: $color-paleta2-2;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    /* Bordes redondeados */
+    font-weight: 500;
+}
+
+prevnext-buttons:hover {
+    background-color: #45a049;
+    /* Cambio de color al pasar el ratón */
+}
+
+#currentPage {
+    margin: 0 10px; // Espacio entre los botones
 }

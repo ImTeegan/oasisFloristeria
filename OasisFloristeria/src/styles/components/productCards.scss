@@ -1,20 +1,26 @@
 @import '../global.scss';
 
 .product-section {
-    display: grid;
-    //grid-template-columns: repeat(4, 1fr); // 2 columnas
+  display: grid;
+  //grid-template-columns: repeat(4, 1fr); // 2 columnas
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 0.5rem; // Espacio entre las tarjetas
+  padding: 0 1rem;
+  margin: 2rem 0;
+
+  @media only screen and (min-width: 48rem) {
     grid-template-columns: repeat(4, minmax(100px, 1fr));
     gap: 2rem; // Espacio entre las tarjetas
     padding: 0 3rem;
-    margin: 2rem 0;
   }
+}
 
 
 .image-cards {
-    width: 210px;
-    height: 210px;
-    object-fit: cover;
-    margin-bottom: 1rem;
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 /* import inter font */
@@ -32,65 +38,74 @@
 /* demo related */
 
 
-.demo_title h1{
+.demo_title h1 {
   color: var(--bg-darker);
-  padding-left: 4.1rem;
+  padding-left: 2rem;
   margin-top: 3rem;
+
+  @media only screen and (min-width: 48rem) {
+    padding-left: 4.1rem;
+  }
 }
 
-#copyrights{
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-  padding-right: 2rem;
+#copyrights {
+  //position: absolute;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+
+  @media only screen and (min-width: 48rem) {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    padding-right: 2rem;
+  }
 }
 
-#copyrights a{
+#copyrights a {
   text-decoration: none;
   color: var(--bg-darker);
 }
 
 /* tpn card style */
-.tpn_card{
+.tpn_card {
   background: white;
-  padding: 23px;
-  border-radius:27px;
+  //padding: 23px;
+  border-radius: 27px;
+
+  padding:0 0.8rem;
+
+  @media only screen and (min-width: 48rem) {
+    padding-left: 3rem;
+  }
 }
 
-.tpn_card img{
-  border-radius:23px;
+.tpn_card img {
+  border-radius: 23px;
   box-shadow: 1px 7px 13px var(--shadow);
 }
 
-.tpn_card h5{
+.tpn_card h5 {
   color: var(--bg-dark);
 }
 
-.tpn_card p{
+.tpn_card p {
   color: var(--font-body);
-  font-weight:400;
-  margin-bottom:24px;
+  font-weight: 400;
+  margin-bottom: 24px;
 }
 
-.tpn_card .tpn_btn{
-  padding:13px 27px !important;
+.tpn_card .tpn_btn {
+  padding: 13px 27px !important;
   line-height: normal;
   background: var(--bg-dark);
-  border-radius:17px;
-  text-decoration:none;
+  border-radius: 17px;
+  text-decoration: none;
   color: #FFF;
   box-shadow: 1px 7px 13px var(--shadow);
   transition: all .7s ease;
 }
 
-.tpn_card .tpn_btn:hover{
+.tpn_card .tpn_btn:hover {
   background: var(--bg-darker);
   box-shadow: none;
 }
-
-
-
-
-  
-  
-  

@@ -26,13 +26,13 @@
       </div>
       <div class="menu" id="menu">
         <ul class="menu-inner">
-          <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">Productos</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">Nosotros</a></li>
+          <li class="menu-item"><a href="./index.html" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="./productList.html" class="menu-link">Productos</a></li>
+          
         </ul>
       </div>
       <div class="brand-container">
-        <a href="#"><img class="brand" src="../public/Logoalternativo.png" alt="logotipo oasis"></a>
+        <a href="./index.html"><img class="brand" src="../public/Logoalternativo.png" alt="logotipo oasis"></a>
       </div>
       <a href="#" class="menu-block"><i class="fa fa-shopping-cart"></i></a>
     </nav>
@@ -50,38 +50,33 @@
   </section>
 
   <div class="wrapper">
-    <div id="search-container">
+    <!--<div id="search-container">
       <input type="search" id="search-input" placeholder="Ingresa el nombre del producto" />
       <button id="search">Buscar</button>
-    </div>
+    </div>-->
     <div id="buttons">
       <div class="category-text"><strong>Categorías:</strong></div>
-      <button class="button-value" onclick="filterProduct('all')">Todas las categorías</button>
-      <button class="button-value" onclick="filterProduct('Ramos-florales')">
-        Ramos florales
+      
+      <button class="button-value" onclick="filterProduct('Ramos')">
+        Ramos
       </button>
-      <button class="button-value" onclick="filterProduct('Arreglos florales')">
-        Arreglos florales
+      <button class="button-value" onclick="filterProduct('Arreglos')">
+        Arreglos
       </button>
       <button class="button-value" onclick="filterProduct('Paquetes de Bodas')">
         Paquetes de Bodas
       </button>
-      <button class="button-value" onclick="filterProduct('Eventos especiales')">
-        Eventos especiales
-      </button>
+      <button class="button-value-aux" onclick="filterProduct('all')">Limpiar filtro</button>
 
     </div>
-
-
-    
   </div>
 
-  <div class="product-section card-container" id="products"></div>
+  <div class=" card-container" id="products"></div>
 
-  <div class="pagination" style="color: black;">
-    <button id="prevPage">&laquo; Prev</button>
+  <div class="pagination" >
+    <button class="prevnext-buttons" id="prevPage">&laquo; Prev</button>
     <span id="currentPage"></span>
-    <button id="nextPage">Next &raquo;</button>
+    <button class="prevnext-buttons" id="nextPage">Next &raquo;</button>
   </div>
 
   
@@ -138,22 +133,7 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Productos
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Arreglos</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Eventos</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Flores</a>
-            </p>
-
-          </div>
+          
           <!-- Grid column -->
 
           <!-- Grid column -->

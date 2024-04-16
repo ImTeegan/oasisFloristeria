@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-image: ;
+    
 
 
     .hero-grid {
@@ -26,29 +26,39 @@
                 text-align: center;
                 //justify-content: center;
                 color: $color-2;
-                font-size: 6rem;
+                font-size: 2.5rem;
                 position: absolute;
-                bottom: 60%;
+                bottom: 70%;
                 left: 50%;
                 transform: translate(-50%, 50%);
                 z-index: 1;
+
+                @media only screen and (min-width: 48rem) { 
+                   
+                    font-size: 6rem;
+                }
             }
 
             .frase-home {
                 color: $color-2;
                 text-align: center;
-                font-size: 3rem;
+                font-size: 1.4rem;
                 position: absolute;
-                bottom: 45%;
+                bottom: 55%;
                 left: 50%;
                 transform: translate(-50%, 50%);
                 z-index: 1;
+
+                @media only screen and (min-width: 48rem) {       
+                    font-size: 2.3rem;
+                    bottom: 50%;
+                }
             }
 
             button.shop-now {
                 position: absolute;
                 text-align: center;
-                bottom: 35%;
+                bottom: 40%;
                 left: 50%;
                 transform: translate(-50%, 50%);
                 z-index: 1;
@@ -67,13 +77,18 @@
                 text-decoration: none #000000 solid;
                 text-decoration-thickness: auto;
                 width: 100%;
-                max-width: 460px;
+                max-width: 300px;
 
                 cursor: pointer;
                 //transform: rotate(-2deg);
                 user-select: none;
                 -webkit-user-select: none;
                 touch-action: manipulation;
+
+                @media only screen and (min-width: 48rem) {       
+                    bottom: 35%;
+                    max-width: 450px;
+                }
             }
 
             .shop-now:focus {

@@ -21,6 +21,10 @@
                 height: 30vh;
                 object-fit: cover;
 
+                @media only screen and (max-width: 48rem) {
+                    height: 20vh;
+                }
+
 
             }
 
@@ -32,6 +36,12 @@
                 padding-top: 10rem;
                 padding-left: 4rem;
                 z-index: 1;
+
+                @media only screen and (max-width: 48rem) {
+                    font-size: 35px;
+                    padding-top: 7rem;
+                    padding-left: 2rem;
+                }
             }
 
             .frase-home {

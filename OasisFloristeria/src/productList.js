@@ -155,7 +155,7 @@ let products = {
 };
 
 //Search button click
-document.getElementById("search").addEventListener("click", () => {
+/*document.getElementById("search").addEventListener("click", () => {
   //initializations
   let searchInput = document.getElementById("search-input").value;
   let elements = document.querySelectorAll(".product-name");
@@ -171,7 +171,7 @@ document.getElementById("search").addEventListener("click", () => {
       cards[index].classList.add("hide");
     }
   });
-});
+});*/
 
 let currentPage = 1;
 const productsPerPage = 10;
@@ -205,7 +205,7 @@ function displayProducts() {
     card.appendChild(imgContainer);
     //container
     let container = document.createElement("div");
-    container.classList.add("container");
+    container.classList.add("container-list-card");
 
 
     //product name
@@ -223,7 +223,7 @@ function displayProducts() {
     //price
     let price = document.createElement("h6");
     price.classList.add("price-cards");
-    price.innerText = "$" + product.price;
+    price.innerText = "₡" + product.price;
     container.appendChild(price);
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
@@ -278,7 +278,7 @@ function displayProductsFiltered(category) {
       //price
       let price = document.createElement("h6");
       price.classList.add("price-cards");
-      price.innerText = "$" + i.price;
+      price.innerText = "₡" + i.price;
       container.appendChild(price);
       card.appendChild(container);
       document.getElementById("products").appendChild(card);
