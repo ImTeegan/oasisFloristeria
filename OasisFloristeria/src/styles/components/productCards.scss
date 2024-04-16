@@ -11,7 +11,7 @@
   @media only screen and (min-width: 48rem) {
     grid-template-columns: repeat(4, minmax(100px, 1fr));
     gap: 2rem; // Espacio entre las tarjetas
-    padding: 0 3rem;
+    padding: 0 2.5rem;
   }
 }
 
@@ -66,6 +66,10 @@
   color: var(--bg-darker);
 }
 
+#copyrights a:hover {
+  text-decoration: underline;
+}
+
 /* tpn card style */
 .tpn_card {
   background: white;
@@ -75,9 +79,18 @@
   padding: 0 0.8rem;
 
   @media only screen and (min-width: 48rem) {
-    padding-left: 3rem;
+    //padding-left: 3rem;
     margin-bottom: 2rem;
+    padding: 1rem;
+    //padding-left: 3rem;
+    //margin-bottom: 2rem;
+    justify-self: center;
   }
+}
+
+.tpn_card:hover {
+  border: 1px solid $color-paleta2-2;
+  //transform: scale(0.5);
 }
 
 .tpn_card img {
